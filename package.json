@@ -1,0 +1,12 @@
+{
+  "name": "useSimpleRouter",
+  "version": "2025.1.13",
+  "description": "A hash-based router that provides support for nested routes and a state object representing the query params.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "fingerskier",
+  "license": "MIT"
+}
