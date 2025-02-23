@@ -14,6 +14,7 @@ import React, { useEffect, useState, useCallback } from 'react'
  */
 export default function useSimpleRouter() {
   const [context, setContext] = useState([])
+  const [path, setPath] = useState('')
   const [state, setState] = useState({})
   
   /**
@@ -23,6 +24,7 @@ export default function useSimpleRouter() {
     // Parse route segments from hash
     const routeSegments = window.location.hash.substring(1).split('/').filter(Boolean)
     setContext(routeSegments)
+    setPath(routeSegments.join('/'))
     
     // Parse query parameters
     const queryString = window.location.search.substring(1)
@@ -130,6 +132,7 @@ export default function useSimpleRouter() {
   
   return {
     context,
+    path,
     state,
     pushState,
     replaceState,
