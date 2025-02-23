@@ -1,5 +1,5 @@
 {
-  "name": "useSimpleRouter",
+  "name": "use-simple-router",
   "version": "2025.1.13",
   "description": "A hash-based router that provides support for nested routes and a state object representing the query params.",
   "main": "index.js",
